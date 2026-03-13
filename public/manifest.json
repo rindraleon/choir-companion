@@ -1,0 +1,17 @@
+{
+  "name": "Antsan'ny Fitia",
+  "short_name": "Antsan'ny Fitia",
+  "description": "Hiran'ny Chorale - Paroles de chansons",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f4f1",
+  "theme_color": "#993344",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    }
+  ]
+}
