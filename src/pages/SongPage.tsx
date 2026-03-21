@@ -87,7 +87,7 @@ const SongPage = () => {
         </div>
 
         {/* Toolbar */}
-        <div className="flex items-center gap-1 px-3 pb-2 overflow-x-auto">
+        <div className="flex items-center justify-between gap-1 px-3 pb-2 overflow-x-auto">
           <Button variant="outline" size="sm" onClick={() => handleFontChange(-2)} className="shrink-0">
             <Minus className="h-3 w-3" /><span className="text-xs ml-0.5">A</span>
           </Button>

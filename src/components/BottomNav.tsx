@@ -4,10 +4,10 @@ import { cn } from "@/lib/utils";
 
 const tabs = [
   { path: "/", icon: Home, label: "Accueil" },
-  { path: "/songs", icon: Music, label: "Hira" },
-  { path: "/search", icon: Search, label: "Hikaroka" },
-  { path: "/favorites", icon: Heart, label: "Tiana" },
-  { path: "/admin", icon: Shield, label: "Admin" },
+  { path: "/songs", icon: Music, label: "Chansons" },
+  { path: "/search", icon: Search, label: "Recherche" },
+  { path: "/favorites", icon: Heart, label: "Favoris" },
+  //{ path: "/admin", icon: Shield, label: "Admin" },
 ];
 
 export function BottomNav() {
