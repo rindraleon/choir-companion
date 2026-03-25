@@ -15,7 +15,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-secondary pb-20">
       {/* Hero */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-primary/50 via-background to-accent/5 px-5 pt-12 pb-8">
+      <div className="relative overflow-hidden bg-gradient-to-br from-primary/25 via-background to-accent/5 px-5 pt-8 pb-8">
         <div className="relative z-10">
           <p className="text-md text-muted-foreground text-center p-1">
             Paroisse Saint François d'Assise <br />
@@ -24,10 +24,10 @@ const Index = () => {
           <h1 className="text-3xl font-bold text-foreground text-center mt-4" style={{ fontFamily: "'Instrument Serif', serif" }}>
             Chorale Antsan'ny Fitia
           </h1>
-          
 
 
-          
+
+
           <div className="flex items-center justify-center gap-3 mt-4">
             <SyncButton onSynced={() => setTick((t) => t + 1)} />
             {lastSync && (
@@ -41,12 +41,12 @@ const Index = () => {
       </div>
       {/* Verser bublique */}
       <div className="px-5 mt-2 mb-10">
-        <div className="p-4 rounded-xl bg-primary/5 border border-primary/10">
+        <div className="p-2 rounded-xl bg-primary/10 border border-primary/20">
           <p className="text-sm font-bold text-center text-muted-foreground italic">
             "Mba handefa feo fiderana, ary hitantara ny asanao mahagaga rehetra."
           </p>
           <p className="text-[10px] text-right mt-1 text-muted-foreground">
-            Salamo 26:7
+            — Salamo 26:7
           </p>
         </div>
       </div>
@@ -54,9 +54,9 @@ const Index = () => {
       {/* Stats */}
       <div className="px-5 -mt-4">
 
-        <p className="text-sm text-center text-muted-foreground mt-1 p-4">
-            Hiran'ny Chorale rehetra — {songs.length} hira
-          </p>
+        <p className="text-sm text-center text-muted-foreground mt-1 p-2">
+          Hiran'ny Chorale rehetra — {songs.length} hira
+        </p>
         <div className="grid grid-cols-3 gap-3 p-4">
           <button
             onClick={() => navigate("/songs")}
@@ -81,7 +81,7 @@ const Index = () => {
           </div>
         </div>
       </div>
-      
+
 
       {/* Categories */}
       <div className="px-5 mt-6">
