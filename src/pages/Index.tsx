@@ -13,23 +13,22 @@ const Index = () => {
   const categories = [...new Set(songs.map((s) => s.category))];
 
   return (
-    <div className="min-h-screen pb-20">
+    <div className="min-h-screen bg-secondary pb-20">
       {/* Hero */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-accent/5 px-5 pt-12 pb-8">
+      <div className="relative overflow-hidden bg-gradient-to-br from-primary/50 via-background to-accent/5 px-5 pt-12 pb-8">
         <div className="relative z-10">
-          <h1 className="text-3xl font-bold text-foreground text-center" style={{ fontFamily: "'Instrument Serif', serif" }}>
-            Chorale Antsan'ny Fitia
-          </h1>
-          <p className="text-sm text-muted-foreground text-center mt-4">
-            Paroasy Md François d'Assise <br />
+          <p className="text-md text-muted-foreground text-center p-1">
+            Paroisse Saint François d'Assise <br />
             Tsararivotra Ambalavao
           </p>
+          <h1 className="text-3xl font-bold text-foreground text-center mt-4" style={{ fontFamily: "'Instrument Serif', serif" }}>
+            Chorale Antsan'ny Fitia
+          </h1>
+          
 
 
-          {/* <p className="text-sm text-muted-foreground mt-1">
-            Hiran'ny Chorale — {songs.length} hira
-          </p> */}
-          <div className="flex items-center justify-center gap-3 mt-8">
+          
+          <div className="flex items-center justify-center gap-3 mt-4">
             <SyncButton onSynced={() => setTick((t) => t + 1)} />
             {lastSync && (
               <span className="text-[10px] text-muted-foreground flex items-center gap-1">
@@ -41,20 +40,24 @@ const Index = () => {
         </div>
       </div>
       {/* Verser bublique */}
-      <div className="px-5 mt-4 mb-10">
+      <div className="px-5 mt-2 mb-10">
         <div className="p-4 rounded-xl bg-primary/5 border border-primary/10">
-          <p className="text-sm text-center text-muted-foreground italic">
+          <p className="text-sm font-bold text-center text-muted-foreground italic">
             "Mba handefa feo fiderana, ary hitantara ny asanao mahagaga rehetra."
           </p>
           <p className="text-[10px] text-right mt-1 text-muted-foreground">
-            — Salamo 26:7
+            Salamo 26:7
           </p>
         </div>
       </div>
 
       {/* Stats */}
       <div className="px-5 -mt-4">
-        <div className="grid grid-cols-3 gap-3">
+
+        <p className="text-sm text-center text-muted-foreground mt-1 p-4">
+            Hiran'ny Chorale rehetra — {songs.length} hira
+          </p>
+        <div className="grid grid-cols-3 gap-3 p-4">
           <button
             onClick={() => navigate("/songs")}
             className="flex flex-col items-center gap-1.5 p-4 rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all"
@@ -88,7 +91,7 @@ const Index = () => {
             <button
               key={cat}
               onClick={() => navigate(`/songs?category=${encodeURIComponent(cat)}`)}
-              className="px-3 py-1.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+              className="px-3 py-1.5 justify-between rounded-full text-xs font-medium bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
             >
               {cat} ({songs.filter((s) => s.category === cat).length})
             </button>

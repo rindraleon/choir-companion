@@ -43,7 +43,7 @@ const Search = () => {
   };
 
   return (
-    <div className="min-h-screen pb-20">
+    <div className="min-h-screen bg-secondary pb-20">
       <div className="sticky top-0 z-40 bg-background/95 backdrop-blur-md border-b px-5 pt-4 pb-3">
         <h1 className="text-lg font-bold text-foreground mb-3">Hikaroka hira</h1>
         <div className="relative">
@@ -75,7 +75,7 @@ const Search = () => {
         {!query.trim() && (
           <div className="flex flex-col items-center justify-center py-16 text-muted-foreground">
             <SearchIcon className="h-12 w-12 mb-3 opacity-30" />
-            <p className="text-sm">Tapez pour rechercher un hira</p>
+            <p className="text-sm">Tapez pour faire de recherche</p>
           </div>
         )}
         {results.map((song) => (

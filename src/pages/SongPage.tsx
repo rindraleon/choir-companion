@@ -70,7 +70,7 @@ const SongPage = () => {
   };
 
   return (
-    <div className="min-h-screen pb-24">
+    <div className="min-h-screen bg-secondary pb-24">
       {/* Header */}
       <div className="sticky top-0 z-40 bg-background/95 backdrop-blur-md border-b">
         <div className="flex items-center gap-2 px-3 py-3">

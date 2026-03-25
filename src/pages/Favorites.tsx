@@ -15,7 +15,7 @@ const Favorites = () => {
   };
 
   return (
-    <div className="min-h-screen pb-20">
+    <div className="min-h-screen bg-secondary pb-20">
       <div className="sticky top-0 z-40 bg-background/95 backdrop-blur-md border-b px-5 pt-4 pb-3">
         <h1 className="text-lg font-bold text-foreground">Hira tiana</h1>
       </div>
